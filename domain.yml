@@ -1,0 +1,73 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- affirm
+- mood_great
+- goodbye
+- greet
+- deny
+- mood_unhappy
+- bot_challenge
+- dar_nome:
+    use_entities: true
+- repetir_nome:
+    use_entities: true
+- dizer_us:
+    use_entities: true
+
+entities:
+- nome
+- cidade
+
+slots:
+  nome:
+    type: text
+    influence_conversation: false
+    auto_fill: true
+  cidade:
+    type: text
+    influence_conversation: false
+    auto_fill: true
+
+responses:
+  utter_solicitar_us:
+  - text: Digite a Cidade que eu te informarei 5 unidades disponíveis no sistema.
+    
+  utter_greet:
+  - text: Olá sou a Bot Saúde, posso te ajudar com informações sobre Postos, Unidades de Saúde e Hospitais. Como você se chama?
+  utter_cheer_up:
+  - text: 'Aqui está algo para te animar:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Isso ajudou você?
+  utter_happy:
+  - text: Ótimo, como posso ajudar?
+  utter_goodbye:
+  - text: Muito Obrigado pelo seu contato. Conte comigo sempre que precisar!
+  utter_iamabot:
+  - text: Eu sou um bot da Rasa.
+  utter_algo_mais:
+  - text: Ajudo em algo mais?
+
+  utter_algo_mais_botoes:
+  - text: "Quer saber mais sobre outra cidade?"
+    buttons:
+    - title: "Sim"
+      payload: "/affirm" #"utter_solicitar_us"
+    - title: "Não"
+      payload: "/deny" #"utter_goodbye"
+
+actions:
+- utter_goodbye
+- utter_greet
+- utter_happy
+- utter_algo_mais
+- action_receber_nome
+- action_dizer_nome
+- action_listar_unidades
+
+

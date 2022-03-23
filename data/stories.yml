@@ -1,0 +1,57 @@
+version: "2.0"
+
+stories:
+
+- story: Solicitar US
+  steps:
+  - action: utter_greet
+  - intent: dar_nome
+  - action: action_receber_nome
+  - action: utter_solicitar_us
+  - intent: dizer_us
+    entities:
+    - cidade: Curitiba
+  - action: action_listar_unidades
+  - action: utter_algo_mais_botoes
+  - intent: affirm
+  - action: utter_solicitar_us
+  - intent: deny
+  - action: utter_goodbye
+
+- story: pedindo nome
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: dar_nome
+  - action: action_receber_nome
+  - intent: repetir_nome
+  - action: action_dizer_nome
+
+#- story: happy path
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: mood_great
+#  - action: utter_happy
+#
+#- story: sad path 1
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: mood_unhappy
+#  - action: utter_cheer_up
+#  - action: utter_did_that_help
+#  - intent: affirm
+#  - action: utter_happy
+#
+#- story: sad path 2
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: mood_unhappy
+#  - action: utter_cheer_up
+#  - action: utter_did_that_help
+#  - intent: deny
+#  - action: utter_goodbye
+
+

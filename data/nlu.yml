@@ -1,0 +1,128 @@
+version: "2.0"
+nlu:
+- intent: dar_nome
+  examples: |
+    - [Maria](nome)
+    - [João](nome)
+    - [José](nome)
+    - [Alfredo](nome)
+    - [Leandro](nome)
+    - [Rodrigo](nome)
+    - [Liu](nome)
+    - [Fabiano](nome)
+    - [Bruno](nome)
+    - [Roberto](nome)
+    - [Escobar](nome)
+- intent: repetir_nome
+  examples: |
+    - qual é o meu nome?
+    - me diga meu nome
+    - você sabe meu nome?
+    - repita meu nome
+- intent: greet
+  examples: |
+    - Oi
+    - Olá
+    - Como vai?
+    - hello there
+    - bom dia
+    - boa noite
+    - eai
+    - salve
+    - vamos nessa
+    - ei cara
+    - boa tarde
+    - hellou
+    - vamos
+    - ei
+- intent: goodbye
+  examples: |
+    - tchau
+    - falou
+    - até
+    - tchauzinho
+    - tchau tchau
+    - adeus
+    - tenha um bom dia
+    - te vejo por ai
+    - até logo
+    - adios
+    - ótimo, obrigado! tchau
+- intent: affirm
+  examples: |
+    - sim
+    - sisi
+    - claro
+    - sem dúvidas
+    - com certeza
+    - correto
+    - afirmativo
+    - Sim
+- intent: deny
+  examples: |
+    - não
+    - nunca
+    - jamais
+    - Eu acho que não
+    - Eu não gosto disso
+    - negativo
+    - Não
+- intent: mood_great
+  examples: |
+    - perfeito
+    - ótimo
+    - maravilhoso
+    - me sentindo como um rei
+    - demais
+    - Eu estou me sentindo muito bem
+    - Eu estou ótimo
+    - Eu estou o máximo
+    - Eu irei salvar o mundo
+    - super animado
+    - extremamente bem
+    - muito perfeito
+    - tão bom
+    - tão perfeito
+    - estou bem e você?
+- intent: mood_unhappy
+  examples: |
+    - meu dia está horrível
+    - Eu estou triste
+    - Não estou me sentindo muito bem
+    - Estou desapontado
+    - super triste
+    - Estou tão triste
+    - triste
+    - muito triste
+    - infeliz
+    - nada bom
+    - não tão bom
+    - extremamente triste
+    - triiiiste
+    - muito pra baixo
+    - estou meio down
+- intent: bot_challenge
+  examples: |
+    - você é um bot?
+    - você é um humano?
+    - Estou falando com um bot?
+    - Estou falando com um humano?
+
+- intent: nlu_fallback
+  examples: |
+    - sair
+
+- intent: dizer_us
+  examples: |
+    - [Curitiba](cidade)
+    - Queria saber sobre hospitais de [Curitiba](cidade)
+    - Quero o endereço do hospital de [Curitiba](cidade)
+    - Informações da [Curitiba](cidade)
+    - [Ponta Grossa](cidade)
+    - Queria saber sobre hospitais de [Ponta Grossa](cidade)
+    - Quero o endereço do hospital de [Ponta Grossa](cidade)
+    - Informações da [Ponta Grossa](cidade)
+    - [Foz do Iguaçu](cidade)
+    - Queria saber sobre hospitais de [Foz do Iguaçu](cidade)
+    - Quero o endereço do hospital de [Foz do Iguaçu](cidade)
+    - Informações da [Foz do Iguaçu](cidade)
