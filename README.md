@@ -18,4 +18,4 @@ Desenvolver um ChatBot para realizar pedidos de Pizzas
 
 ![Conversação](https://github.com/leandroko/ChatBot_Rasa/blob/master/conversa_exemplo.png)
 
-![Youtube - Rasa Shell Interactive](https://youtu.be/Fht1J7yA8Ro)
+[Youtube - Rasa Shell Interactive](https://youtu.be/Fht1J7yA8Ro)
