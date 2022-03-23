@@ -1,1 +1,3 @@
-*.mp4, Pasta_Envio
+*.mp4
+Pasta_Envio/*
+Rasa_Shell_Interactive.mp4
